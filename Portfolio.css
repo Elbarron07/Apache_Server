@@ -1,0 +1,177 @@
+/* Définition du style de base pour le corps de la page */
+body {
+    font-family: 'Arial', sans-serif; /* Police de caractères */
+    margin: 0; /* Suppression des marges par défaut du navigateur */
+    padding: 0; /* Suppression des paddings par défaut du navigateur */
+    box-sizing: border-box; /* La boîte de modèle inclut la bordure dans la taille totale */
+    background-color: #f9f9f9; /* Une nuance de gris très clair pour le fond */
+    color: #333; /* Couleur de texte principale */
+}
+
+/* Conteneur principal avec une largeur de 80% centrée horizontalement */
+.container {
+    width: 80%;
+    margin: 0 auto; /* Marge automatique à gauche et à droite pour centrer */
+}
+
+/* Style de l'en-tête de la page */
+header {
+    background-color: #333333; /* Bleu ardoise foncé pour l'arrière-plan de l'en-tête */
+    color: #da6947; /* Texte en blanc cassé dans l'en-tête */
+    padding: 1em; /* Rembourrage de 0 en haut et en bas, 0 à gauche et à droite */
+    text-align: center; /* Centrer le texte dans l'en-tête */
+}
+
+/* Style du titre principal dans l'en-tête */
+header h1 {
+    margin: 0; /* Suppression de la marge par défaut pour le titre principal */
+}
+
+/* Style des sections principales de la page */
+section {
+    padding: 40px 0; /* Rembourrage en haut et en bas de chaque section */
+    background-color: #999; /* Fond gris pour les sections principales */
+    border-bottom: 0px solid #ecf0f1; /* Bordure légère entre les sections (actuellement désactivée) */
+}
+
+/* Style des sous-titres (h2) dans les sections */
+h2 {
+    color: #34495e; /* Bleu ardoise foncé pour les sous-titres */
+}
+
+/* Style des projets avec une marge en bas pour l'espacement entre eux */
+.project {
+    margin-bottom: 20px;
+}
+
+/* Style du pied de page fixé en bas de la page */
+footer {
+    background-color: #333333; /* Bleu ardoise foncé pour le pied de page */
+    color: #ecf0f1; /* Texte en blanc cassé dans le pied de page */
+    text-align: center; /* Centrer le texte dans le pied de page */
+    padding: 1px 0; /* Rembourrage en haut et en bas du pied de page */
+    position: fixed; /* Le pied de page reste fixe en bas de la fenêtre */
+    bottom: 0; /* Alignement en bas */
+    width: 100%; /* Pleine largeur */
+}
+
+/* Style pour la photo dans l'en-tête avec une bordure arrondie */
+/* Style pour la photo dans l'en-tête avec des fonctionnalités supplémentaires */
+img {
+    width: 150px; /* Ajustez la taille selon vos besoins */
+    border-radius: 50%; /* Donne une forme circulaire à la photo */
+    margin-bottom: 0px; /* Marge en bas pour l'espacement */
+
+    /* Ajout d'une ombre légère au survol */
+    box-shadow: 0 0 30px rgba(0, 0, 1, 1);
+    
+    /* Ajout d'une transition fluide lors du survol */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+     {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 13; /* Définir l'opacité à 0 par défaut pour le rendre invisible */
+    transition: opacity 0.3s ease-in-out; /* Ajout d'une transition d'opacité */
+}
+
+/* Apparition du texte avec une animation de fondu au survol */
+.profile-info:hover .info-text {
+    opacity: 1;
+}
+
+/* Ajout d'un effet de rotation au texte */
+.profile-info:hover .info-text {
+    transform: translateX(-50%) rotate(360deg);
+}
+/* Ajout d'une ombre légère au texte au survol */
+.profile-info:hover .info-text {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+}
+
+/* Effet de zoom au survol */
+img:hover {
+    transform: scale(1.2);
+    
+    /* Changement de la couleur du cadre au survol */
+    border-color: #3498db;
+}
+
+/* Curseur personnalisé au survol */
+img:hover {
+    cursor: pointer;
+}
+
+/* Rotation légère au survol */
+img:hover {
+    transform: auto(5deg);
+}
+
+/* Effet de transition de couleur au survol */
+img:hover {
+    filter: grayscale(0%); /* Désaturation totale */
+    transition: filter 0.3s ease-in-out;
+}
+
+
+/* Ajoutez des effets de survol aux liens */
+a:hover {
+    color: #e74c3c; /* Rouge foncé au survol des liens */
+}
+
+/* Ajoutez une animation simple aux projets au survol */
+.project {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Zoom au survol des projets */
+.project:hover {
+    transform: scale(1.05);
+}
+
+/* Exemple de media query pour ajuster la mise en page sur les petits écrans */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Ajustez la taille de la police pour les écrans plus petits */
+    }
+    /* Ajoutez d'autres styles pour la version mobile si nécessaire */
+}
+
+/* Réglages d'image pour assurer une largeur maximale et une hauteur automatique */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Réglage de la taille de la police du titre principal en fonction de la largeur de la fenêtre */
+h1 {
+    font-size: 5vw;
+}
+/* Styles pour le mode clair */
+body.clair {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Styles pour le mode sombre */
+body.sombre {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+#contact {
+    display: none;
+}
+#contact {
+    display: none;
+}
+
+/* Ajoutez cette classe pour masquer la section */
+.hidden {
+    display: none;
+}
+#contact:target {
+    display: block; /* Affiche la section lorsque ciblée */
+}

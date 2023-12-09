@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Portfolio.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="profile-info">
+            <!-- Image enveloppée dans un lien -->
+            <a href="#contact" id="photo-link">
+                <img src="Portfolio.jpg" alt="Votre Photo">
+            </a>
+            <p class="info-text">Pour plus d'informations cliquer sur ma tête</p>
+        </div>
+        <strong>MIGNANOU Folly Moïse</strong>
+        <p>Étudiant en Deuxième Année de CyberSécurité à <a href="https://www.ipnetuniversity.com">IPnet Institute Of Technology</a></p>
+    </div>
+</header>
+
+
+
+    <section id="about">
+        <div class="container">
+            <h2>À Propos de Moi</h2>
+            <p>Bienvenue sur mon portfolio. <br>
+
+        Je me présente, je suis MIGNANOU Folly Moïse, actuellement étudiant en deuxième année de cybersécurité à <a href="https://www.ipnetuniversity.com">IPnet Institute Of Technology</a>. <br>Mon parcours académique approfondi m'a permis de développer une compréhension solide des principes fondamentaux de la sécurité informatique, allant de la gestion des identités et des accès à la détection des menaces et à la réponse aux incidents. <br>
+
+        Au fil de mes études, j'ai eu l'occasion de mettre en pratique mes connaissances à travers des projets concrets, renforçant ainsi ma capacité à appliquer des solutions dans des environnements réels. Ma participation active à des compétitions de cybersécurité a affiné mes compétences en résolution de problèmes, en détection d'anomalies et en renforcement des infrastructures, développant ainsi un esprit analytique et une approche proactive envers la sécurité informatique. <br>
+
+        En parallèle de mes engagements académiques, je reste constamment informé des dernières tendances et évolutions dans le domaine de la cybersécurité. Ma participation régulière à des conférences, à des formations en ligne, ainsi qu'à des communautés virtuelles, témoigne de mon engagement à rester à la pointe des avancées technologiques dans ce domaine dynamique. <br>
+
+        Mon objectif professionnel est de contribuer activement à la protection des systèmes d'information et des données sensibles contre les menaces émergentes. Je suis fermement convaincu que la cybersécurité joue un rôle essentiel dans notre société numérique, et je suis déterminé à jouer mon rôle dans la préservation de la confidentialité et de l'intégrité des informations. <br>
+
+        N'hésitez pas à me contacter si vous souhaitez discuter de cybersécurité, partager des idées ou explorer des opportunités de collaboration. Je suis ouvert aux stages, aux partenariats académiques et aux collaborations professionnelles. <br>
+
+        Je vous remercie de prendre le temps de découvrir mon profil, et j'attends avec impatience l'opportunité d'échanger avec vous. <br>
+
+        Cordialement, <br>
+
+        MIGNANOU Folly Moïse</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+        <p>© 2023 MIGNANOU. Tous droits réservés.</p>
+        
+        <!-- Liens des réseaux sociaux avec leurs logos -->
+        <div class="social-links">
+            <a href="lien_vers_facebook" target="_blank"><img src="logo_facebook.png" alt="Facebook"></a>
+            <a href="lien_vers_twitter" target="_blank"><img src="logo_twitter.png" alt="Twitter"></a>
+            <a href="lien_vers_instagram" target="_blank"><img src="logo_instagram.png" alt="Instagram"></a>
+            <!-- Ajoutez d'autres réseaux sociaux si nécessaire -->
+        </div>
+    </div>
+    </section>
+
+    <section id="contact">
+        <div class="container" id="contact" class="hidden">
+            <h2>Contact</h2>
+            <p>N'hésitez pas à me contacter :</p>
+            <ul>
+                <li>Email: <a href="mignanoumoise07@gmail.com">mignanoumoise07@gmail.com</a></li>
+                <!--<li>LinkedIn: linkedin.com/in/votreprofil</li>-->
+                <li>Téléphone: <a href="+228 99792150">+228 99792150</a></li>
+                <!--<li>GitHub: github.com/votreusername</li>-->
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+        <!-- Ajoutez des liens vers vos réseaux sociaux ici -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/votreprofil" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.twitter.com/votreusername" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://www.facebook.com/votrepage" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <!-- Ajoutez d'autres liens selon vos besoins -->
+        </div>
+    </div>
+        <div class="container">
+            <p>&copy; 2023 MIGNANOU. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <!-- Ajoutez ces scripts à la fin de votre fichier HTML, juste avant </body> -->
+
+<script>
+    // Exemple de script JavaScript pour changer la couleur de fond au clic
+    document.body.addEventListener('click', function() {
+        document.body.style.backgroundColor = '#f0f0f0';
+    });
+     document.getElementById('photo-link').addEventListener('click', function() {
+        // Affiche la section de contact en changeant sa visibilité
+        var contactSection = document.getElementById('contact');
+        contactSection.style.display = 'block';
+
+        // Fait défiler jusqu'à la section de contact
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+</script>
+
+</body>
+</html>
